@@ -1,0 +1,28 @@
+<div class="main">
+    <div class="container">
+        <div class="leftDiv">
+            
+            <p>Save the envirnment</p>
+        </div>
+        <div class="rightDiv">
+            <p>Welcome to Nature Hub</p>
+                <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <div class="formItem">
+                        <label for="username">User name: </label>
+                         <input id="username" type="text" formControlName="username">
+                         <div><span class="error" *ngIf="(loginForm.controls.username.touched || loginForm.controls.username.dirty) && !loginForm.controls.username.valid" >Please enter valid user name </span></div>
+                    </div>
+                    <div class="formItem">
+                        <label for="password">Password: </label>
+                        <input id="password" type="password" formControlName="password">
+                        <div><span class="error" *ngIf="(loginForm.controls.password.touched || loginForm.controls.password.dirty) && !loginForm.controls.password.valid">Please enter valid password</span>
+                        </div>
+                    </div>
+                    <button class="submitBtn" type="submit"  [disabled]="!loginForm.valid" >Submit</button>
+                  
+                </form>
+                <p class routerLink="/signup">Signup</p>
+
+        </div>
+    </div>
+</div>

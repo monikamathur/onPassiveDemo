@@ -1,0 +1,70 @@
+.main{
+    display: flex;
+    background-color: #b2d6b4;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    .container{
+            background-color: white;
+            width: 50%;
+            height: 100%;
+            background-color: white;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+             flex-wrap: wrap;
+            p:first-child{
+                padding-bottom: 5%;
+            }
+            p:last-child{
+                padding-top: 5%;
+            }
+            .form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .formItem{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    flex-basis: 50px;
+                    align-content: space-between; 
+                    padding: 9px;  
+                    label{
+                        font-size: 14px;                    }
+                    input{
+                        height: 35px;;
+                        border: none;
+                        border-bottom: solid 1px gray;
+                        font-size: 16px;
+                    }
+                    input:focus {
+                        border: none;
+                        border-bottom: solid 1px gray;
+                        outline: none;
+                      }
+                      div{
+                          color: rgb(247, 134, 134);
+                          font-size: 12px;
+                      }
+
+
+                }
+                .submitBtn{
+                    background-color: #b2d6b4 !important;
+                    border-radius: 5px;
+                    font-size: 17px;
+                    padding: 6px 18px;
+                    color: #b2d6b4 !important;
+
+                }
+            }
+
+    
+    }
+
+}
